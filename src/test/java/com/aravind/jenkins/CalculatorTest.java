@@ -32,7 +32,7 @@ class CalculatorTest {
 		assertEquals(2,calculator.sub(5, 3));
 	}
 	
-	@Disabled("disabled until bug#1 is fixed")
+//	@Disabled("disabled until bug#1 is fixed")
 	@Test
 	public void testSubNegativeResult() {
 		assertEquals(-2,calculator.sub(3, 5));
