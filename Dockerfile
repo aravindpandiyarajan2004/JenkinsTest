@@ -21,7 +21,7 @@ RUN mvn -f /home/app/pom.xml clean package
 
 FROM openjdk:17-alpine
 
-COPY --from=build /home/app/target/Jenkins-1-0.0.1-SNAPSHOT.jar /usr/local/lib/Jenkins-1-0.0.1-SNAPSHOT.jar
+COPY --from=build /home/app/target/Jenkins-0.0.1-SNAPSHOT.jar /usr/local/lib/Jenkins-0.0.1-SNAPSHOT.jar
 
-ENTRYPOINT ["java","-jar","/usr/local/lib/Jenkins-1-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/usr/local/lib/Jenkins-0.0.1-SNAPSHOT.jar"]
  
