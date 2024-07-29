@@ -34,7 +34,7 @@ class CalculatorTest {
 	
 //	@Disabled("disabled until bug#1 is fixed")
 	@Test
-	public void testSubNegativeResult() {
+	 void testSubNegativeResult() {
 		assertEquals(-2,calculator.sub(3, 5));
 	}
 
